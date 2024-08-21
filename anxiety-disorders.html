@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--
+Template Name: Surogou
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Health</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 15px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body id="top">
+
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Mental Health</span></a></h1> 
+	  <h1 class="logoname">Let's Connect</h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		<div class="search">
+			<input type="search" id = "query" name = "q" class="searchTerm" placeholder="What are you looking for?">
+		<button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+		</button>
+		</div>
+		</form>	
+	  </div>
+    </div>
+	<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+    <!-- ################################################################################################ -->
+  </header>
+  <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="../index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./what-is-mental-health.html">What is Mental Health</a></li>
+              <!--<li><a href="./mental-health-for-indigenous-people.html">Mental Health in Indigenous People</a></li>-->
+          
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./anxiety-disorders.html">Depression</a></li>
+          <!--<li><a class="drop" href="#">PTSD</a>-->
+         <ul>
+
+         <!---- <li><a href="./ptsd.html">What is PTSD</a></li>
+          <li><a href="./ptsd.html">Intergenerational Trauma</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>-->
+		  <ul>
+			<li><a href="https://depression.org.nz/is-it-depression-anxiety/self-test/">Depression and Anxiety Self-Test</a></li>
+			<li><a href="https://screening.mhanational.org/screening-tools/ptsd/">PTSD Self-Test</a></li>
+		  </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./login.html">login</a></li>
+		<li><a href="./registration.html">registration</a></li>
+	  </ul>
+	  <li class="active"><a class="drop" href="#">Change Language</a>
+        <ul>
+		  <li><a href="#">Cree</a></li>
+          <li><a href="#">Anishinaabe</a></li>
+		  <li><a href="#">Haudenosaunee</a></li>
+		  <li><a href="#">Inuk</a></li>
+          <li><a href="#">Métis</a></li>
+        </ul>
+      </li>
+      <li><a href="../index.html#target">About us</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div>
+  <div id="breadcrumb" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">What to Look for</a></li>
+      <li><a href="./anxiety-disorders.html">Anxiety Disorders</a></li>
+    </ul>
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    <div class="sidebar one_quarter first"> 
+      <!-- ################################################################################################ -->
+      <h6>What to Look for</h6>
+      <nav class="sdb_holder">
+       
+        <ul>
+		  <li style="background-color: powderblue;padding: 20px;"><a href="./anxiety-disorders.html">Anxiety Disorders</a></li>
+          <li style="background-color: #c2c2d6;padding: 20px;"><a href="./anxiety-disorders.html">Depression</a></li>
+		 <!--- <li style="background-color: #c2c2d6;padding: 20px;"><a href="./ptsd.html">What is PTSD?</a></li>
+		  <li style="background-color: #c2c2d6;padding: 20px;"><a href="./ptsd.html">Intergenerational Trauma</a></li>-->
+          <!--<li><a href="pages/full-width.html">Full Width</a></li> -->
+          <!--<li><a href="pages/sidebar-left.html">Sidebar Left</a></li> -->
+          <!--<li><a href="pages/sidebar-right.html">Sidebar Right</a></li> -->
+          <!--<li><a href="pages/basic-grid.html">Basic Grid</a></li> -->
+          <!--<li><a href="pages/font-icons.html">Font Icons</a></li> -->
+        </ul>
+      
+      </nav>
+     
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="content two_quarter" style = "text-align: justify;text-justify: inter-word;"> 
+      <!-- ################################################################################################ -->
+
+      <h2 style = "font-size: 30px; color: #006600">Anxiety Disorders</h2>
+
+<p>
+Occasional anxiety is an expected part of life. You might feel anxious when faced with a problem at work, before taking a test, or before making an important decision. But anxiety disorders involve more than temporary worry or fear. For a person with an anxiety disorder, the anxiety does not go away and can get worse over time. The symptoms can interfere with daily activities such as job performance, school work, and relationships.
+
+There are several types of anxiety disorders, including generalized anxiety disorder, panic disorder, and various phobia-related disorders. 
+</p>
+      <h2 style = "font-size: 30px; color: #006600">Anxiety Disorders Among People in India</h2>
+      <p> Anxiety disorders in India, a nation with a population exceeding 1.3 billion, present a complex public health issue shaped by a unique amalgamation of cultural, social, and economic factors. The prevalence of anxiety disorders varies widely across different regions and communities, reflecting India's vast diversity.
+</p>
+      <p>Despite this, studies suggest that anxiety disorders are significantly underreported and underdiagnosed, partly due to the stigma associated with mental health issues and a general lack of awareness. This situation is exacerbated by a chronic shortage of mental health professionals, with estimates indicating less than one psychiatrist for every 100,000 people in some areas. Traditional societal norms often discourage individuals from discussing mental health struggles, leading many to suffer in silence or seek help only from non-professional sources, such as spiritual healers, which may not always provide the necessary care. Furthermore, the rapid urbanization and socioeconomic changes have introduced new stressors, contributing to the increasing incidence of anxiety disorders among all age groups.
+        However, there is a silver lining as awareness is gradually improving through education and the efforts of numerous NGOs working tirelessly to destigmatize mental health issues. The Indian government has also begun to recognize the importance of mental health, as seen in initiatives like the National Mental Health Programme, aiming to increase accessibility to mental health care services.
+</p>
+
+
+	  <p>Yet, for a significant impact, these efforts must be scaled up and integrated with a holistic approach to health that considers the unique cultural context of India
+</p>
+      <h2 style = "font-size: 30px; color: #006600">Depression</h2>
+	  <p>Depression is a significant mental health challenge in India, affecting individuals across various demographics. The burden of depression in the country is considerable due to factors such as socio-economic disparities, lack of mental health awareness, and inadequate access to professional help. Cultural stigma surrounding mental health issues further exacerbates the problem, leading many to suffer in silence. Urbanization and modern lifestyle pressures also contribute to the rising incidence of depression, impacting the well-being of the population. Despite these challenges, efforts are being made to improve mental health services and awareness. Initiatives by both governmental and non-governmental organizations aim to destigmatize mental health issues, encouraging more people to seek help. Access to affordable and effective mental health care remains a critical need as India continues to confront the growing challenge of depression among its people.
+</p>
+      <ul>
+
+	  <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!--<div class="wrapper gradient">
+  <section id="cta" class="hoc container clear"> -->
+    <!-- ################################################################################################ -->
+    <!--<div class="sectiontitle">
+      <h6 class="heading">interdum pulvinar aliquam</h6>
+      <p>in urna proin luctus ligula eget mauris quisque congue malesuada</p>
+    </div>
+    <ul class="nospace clear">
+      <li class="one_third first">
+        <div class="block clear"><i class="fas fa-phone"></i> <span><strong>Give us a call:</strong> +00 (123) 456 7890</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-envelope"></i> <span><strong>Send us a mail:</strong> support@domain.com</span> </div>
+      </li>
+      <li class="one_third">
+        <div class="block clear"><i class="fas fa-map-marker-alt"></i> <span><strong>Come visit us:</strong> Directions to <a href="#">our location</a></span> </div>
+      </li>
+    </ul>-->
+    <!-- ################################################################################################ -->
+  <!--</section>
+</div>-->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row4" style = "background-color:#0E8388;">
+  <footer id="footer" class="hoc clear"> 
+   
+    <div class="one_third first">
+      <h1 class="logoname"><a id="target2">Our Mission</a></h1>
+      <p class="btmspace-30" style = "text-align: justify;text-justify: inter-word;">We are here to help you find quality information, help you to learn new skills, inform you about the nearby spiritual ceremonies and most importanly listen. <br>According to the National Institute of Mental Health and Neurosciences (NIMHANS), mental illnesses affect about 20% of the Indian population, with an estimated 150 million people in need of mental health care. However, only 10-12% of these individuals receive any form of treatment. The NMHP seeks to address this gap by training mental health professionals, strengthening mental health infrastructure, and promoting awareness and destigmatization of mental illnesses. <a href = "https://www.nhp.gov.in/national-mental-health-programme_pg#:~:text=The%20Government%20of%20India%20launched,to%20the%20Program%20in%201996.">NMHP</a></p>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Links to Important Sites</h6>
+      <ul class="nospace linklist">
+        <li><a href="https://www.mentalhealth.gov/">mentalhealth.gov</a></li>
+        <li><a href="https://www.sanyas.ca/">sanyas.ca</a></li>
+        <li><a href="https://www.heretohelp.bc.ca/">hertohelp.ca</a></li>
+        <li><a href="https://www.camh.ca/">Mental Illness and Addiction Facts</a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="heading">Any comments or concerns?</h6>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          <input class="btmspace-15" type="text" value="" placeholder="Name">
+          <input class="btmspace-15" type="text" value="" placeholder="Email">
+		  <input class="btmspace-15" type="text" value="" placeholder="Comment">
+          <button type="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row5" style = "background-color:#00e6e6">
+  <div id="copyright" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved </p>
+    
+    <!-- ################################################################################################ -->
+  </div>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
